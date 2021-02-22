@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: k8s/overlays/personal
-    repoURL: 'https://github.com/yarelm/env-demo'
+    repoURL: 'https://github.com/doitintl/developer-envs'
     targetRevision: HEAD
   project: default
   syncPolicy:
@@ -30,7 +30,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: k8s/overlays/personal
-    repoURL: 'https://github.com/yarelm/env-demo'
+    repoURL: 'https://github.com/doitintl/developer-envs'
     targetRevision: HEAD
   project: default
   syncPolicy:
