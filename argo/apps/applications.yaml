@@ -38,22 +38,3 @@ spec:
       prune: false
       selfHeal: false
 ---
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: ezekiel-env
-  namespace: argocd
-spec:
-  destination:
-    name: ''
-    namespace: ezekiel-env
-    server: 'https://kubernetes.default.svc'
-  source:
-    path: k8s/overlays/personal
-    repoURL: 'https://github.com/doitintl/developer-envs'
-    targetRevision: HEAD
-  project: default
-  syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
