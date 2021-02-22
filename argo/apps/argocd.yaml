@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: argo/apps
-    repoURL: https://github.com/yarelm/env-demo
+    repoURL: https://github.com/doitintl/developer-envs
     targetRevision: HEAD
   syncPolicy:
     automated:
