@@ -1,6 +1,6 @@
 # Personal Environments Terraform
 
-Tested with Terraform v0.13.6
+Tested with Terraform v0.14.7
 
 This terraform module is built as follows:
 * `module/host` is the TF module for provisioning the single host project with the following infra components:

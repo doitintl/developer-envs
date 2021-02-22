@@ -23,7 +23,7 @@ variable "region" {
 variable "db_zone" {
   type        = string
   description = "The zone to host the postgres DB"
-  default = "europe-west1-a"
+  default = "europe-west1-b"
 }
 
 variable "tenants" {

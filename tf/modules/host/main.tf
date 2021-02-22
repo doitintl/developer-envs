@@ -51,7 +51,7 @@ data "google_compute_subnetwork" "subnetwork" {
 }
 
 module "gke" {
-  source     = "terraform-google-modules/kubernetes-engine/google//modules/private-cluster/"
+  source     = "github.com/terraform-google-modules/terraform-google-kubernetes-engine//modules/private-cluster/"
   project_id = module.host-project.project_id
   name       = var.cluster_name
   regional   = true
@@ -65,7 +65,6 @@ module "gke" {
   enable_private_endpoint = false
   enable_private_nodes    = true
   master_ipv4_cidr_block  = "172.16.0.0/28"
-  grant_registry_access = true
 
   master_authorized_networks = [
     {
@@ -89,6 +88,8 @@ module "gke" {
       "https://www.googleapis.com/auth/cloud-platform",
     ]
   }
+
+  depends_on = [module.host-project]
 }
 
 module "cloud_router" {
