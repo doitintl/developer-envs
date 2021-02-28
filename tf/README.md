@@ -26,4 +26,4 @@ This terraform module is built as follows:
 * Run `terraform init`
 * Run `terraform apply -var-file=personal.tfvars`
 * Go over and approve the pending changes
-* Wait until it's over... (it can take a while.. If you encounter an error - in some rare cases it might be beneficial to re-run the apply procedure) :smiley:
+* Wait until it's done (it can take a while...) :smiley:
