@@ -1,10 +1,11 @@
-# developer-envs
+# Personal Developer Environments
 
+## Getting Started
 * Clone this repo
-* Go to the `tf` directory and follow the README instructions there
-* Go to the `argo` directory and follow the README instructions there
+* `cd tf/` and follow the README instructions there
+* `cd argo/` and follow the README instructions there
 * Profit!
 
 
-Cleanup:
+## Cleanup:
 * Run `terraform destroy -var-file=personal.tfvars` in the `tf` directory
