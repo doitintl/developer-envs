@@ -117,7 +117,7 @@ module "postgresql-db" {
   source               = "GoogleCloudPlatform/sql-db/google//modules/postgresql"
   name                 = "master"
   random_instance_name = true
-  database_version     = "POSTGRES_9_6"
+  database_version     = "POSTGRES_11"
   project_id           = module.host-project.project_id
   zone                 = var.db_zone
   region               = var.region

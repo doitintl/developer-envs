@@ -31,4 +31,6 @@ module "dev_envs" {
   postgres_ip = module.host.postgres_ip
   subnetwork_uri = module.host.subnetwork_uri
   region = var.region
+
+  depends_on = [module.host]
 }

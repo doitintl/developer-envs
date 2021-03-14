@@ -1,6 +1,6 @@
 # Personal Environments Terraform
 
-Tested with Terraform v0.14.7
+Tested with Terraform v0.14.7 (Might work with other versions as well but not tested yet. You can use [tfswitch](https://tfswitch.warrensbox.com/) to switch between versions)
 
 This terraform module is built as follows:
 * `module/host` is the TF module for provisioning the single host project with the following infra components:
