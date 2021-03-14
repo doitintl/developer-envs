@@ -36,8 +36,8 @@ resource "kubernetes_config_map" "gcp" {
     GCP_PROJECT             = module.tenant-project.project_id
     PG_USER = var.tenant_name
     PG_HOST = var.postgres_ip
-    PUBSUB_SUBSCRIPTION = module.pubsub.payment_event_topic_name
-    PUBSUB_TOPIC = module.pubsub.payment_event_topic_name
+    PAYMENT_SUBSCRIPTION = module.pubsub.payment_event_topic_name
+    PAYMENT_TOPIC = module.pubsub.payment_event_topic_name
   }
 }
 
