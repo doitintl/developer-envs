@@ -66,9 +66,18 @@ module "workload_identity" {
   ]
 }
 
-resource "google_project_iam_binding" "project" {
+resource "google_project_iam_binding" "subscriber" {
   project = module.tenant-project.project_id
   role    = "roles/pubsub.subscriber"
+
+  members = [
+    "serviceAccount:${module.workload_identity.gcp_service_account_email}",
+  ]
+}
+
+resource "google_project_iam_binding" "publisher" {
+  project = module.tenant-project.project_id
+  role    = "roles/pubsub.publisher"
 
   members = [
     "serviceAccount:${module.workload_identity.gcp_service_account_email}",
