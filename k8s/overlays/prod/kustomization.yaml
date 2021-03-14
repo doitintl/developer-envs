@@ -12,4 +12,4 @@ images:
     newTag: 2251945937daea468e115cd0b42a90cd027f9780
   - name: gcr.io/env-service-304211/env-consumer
     newName: gcr.io/env-service-304211/env-consumer
-    newTag: b9a75ccb6436abc8d19c7473111d54b23e209f53
+    newTag: 9247f1c9bedb9d704af41765ba2c7d94af54a2a8
